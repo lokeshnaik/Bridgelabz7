@@ -1,0 +1,35 @@
+
+class Employee
+{
+  int eid;
+  int salary;
+  static String ceo;
+  
+   public void show()
+   {
+	   System.out.println(eid+ ":"+salary+":"+ceo+":");
+   }
+}
+
+
+
+
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+		Employee lokesh=new Employee();
+		lokesh.eid=7;
+		lokesh.salary=900000;
+		lokesh.ceo="george";
+		
+		Employee naik=new Employee();
+		naik.eid=9;
+		naik.salary=1000000;
+		naik.ceo="Navin";
+		
+		lokesh.show();
+		naik.show();
+	}
+}

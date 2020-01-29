@@ -1,0 +1,16 @@
+
+public class firstclass 
+{
+  public static void main(String[] args)
+  {
+   int k=8;
+   if(k%2==1)
+   {
+	   System.out.print("Lokesh");
+   }
+   else
+   {
+	   System.out.print("Lokesh naik");
+   }
+  }
+}

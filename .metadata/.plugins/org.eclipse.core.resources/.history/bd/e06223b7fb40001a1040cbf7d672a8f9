@@ -1,0 +1,9 @@
+package defaultpackage;
+
+public class CuoponNumbers 
+{
+ public static void main(String[] args)
+ {
+	 
+ }
+}

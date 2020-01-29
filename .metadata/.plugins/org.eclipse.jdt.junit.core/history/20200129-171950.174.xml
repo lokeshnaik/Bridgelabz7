@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringReplace (2)" project="BridgeLabz1" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="junitpackage.StringReplace" time="0.0" displayname="StringReplace" uniqueid="[engine:junit-jupiter]/[class:junitpackage.StringReplace]">
+    <testcase name="test" classname="junitpackage.StringReplace" time="0.0" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:junitpackage.StringReplace]/[method:test()]"/>
+    <testcase name="test1" classname="junitpackage.StringReplace" time="0.0" displayname="test1()" uniqueid="[engine:junit-jupiter]/[class:junitpackage.StringReplace]/[method:test1()]"/>
+    <testcase name="test2" classname="junitpackage.StringReplace" time="0.0" displayname="test2()" uniqueid="[engine:junit-jupiter]/[class:junitpackage.StringReplace]/[method:test2()]"/>
+  </testsuite>
+</testrun>

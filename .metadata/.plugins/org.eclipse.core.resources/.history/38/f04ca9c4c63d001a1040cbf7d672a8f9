@@ -1,0 +1,17 @@
+package Functionalprograms;
+
+import java.util.Scanner;
+
+public class Stringclass 
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Enter the name whom you want to wish");
+		String str="Hello <<UserName>>,How are you?";
+		Scanner sc=new Scanner(System.in);
+		String str1=sc.nextLine();
+		System.out.println(str1);
+		System.out.println(str.replace("<<UserName>>", str1));
+	}
+
+}

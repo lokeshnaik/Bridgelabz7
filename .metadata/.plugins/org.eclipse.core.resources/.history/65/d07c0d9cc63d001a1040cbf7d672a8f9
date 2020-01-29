@@ -1,0 +1,15 @@
+package Functionalprograms;
+
+import java.util.Scanner;
+
+public class Stringclass 
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Enter the name whom you want to wish");
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		System.out.println(str);
+	}
+
+}

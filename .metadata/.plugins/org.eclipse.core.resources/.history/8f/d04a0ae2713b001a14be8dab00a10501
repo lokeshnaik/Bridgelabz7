@@ -1,0 +1,24 @@
+class A
+{
+	public void show()
+	{
+		System.out.println("Hey Lokesh");
+	}
+}
+
+
+public class firstclass
+{
+	public static void main(String [] args)
+	{
+		A obj=new A()
+				{
+				   public void show()
+				   {
+					   System.out.println("WOrk hard,will power and dedication");
+				   }
+				};
+				obj.show();
+	}
+	
+}

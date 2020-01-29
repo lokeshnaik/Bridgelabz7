@@ -1,0 +1,29 @@
+
+class operation
+{
+	int num1;
+	int num2;
+	int result;
+	public operation(int n)
+	{
+		num1=n;
+		num2=num1+n;
+		result=num1+num2;
+	}
+	public operation(int i,double j)
+	{
+		result=i+(int)j;
+	}
+}
+
+
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+	   operation op=new operation(5,5.5);
+	  
+	   System.out.print(op.result);
+	}
+}

@@ -1,0 +1,57 @@
+class Hey
+{
+	public void show()
+	{
+		int i;
+		for(i=0;i<5;i++)
+		{
+			System.out.println("Hey Lokesh:");
+		
+		try
+		{
+			Thread.sleep(1000);
+		}
+		catch(Exception e)
+		{
+			
+		}
+		}
+	}
+}
+
+class HeyHi
+{
+	public void show()
+	{
+		int i;
+		for(i=0;i<5;i++)
+		{
+			System.out.println("Stay in your limits:");
+		
+		try
+		{
+			Thread.sleep(1000);
+		}
+		catch(Exception e)
+		{
+			
+		}
+		}
+	}
+}
+
+
+
+
+
+public class firstclass
+{
+	public static void main(String [] args)
+	{
+		Hey obj1=new Hey();
+		HeyHi obj2=new HeyHi();
+		
+		obj1.show();
+		obj2.show();
+	}
+}

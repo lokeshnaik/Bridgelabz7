@@ -1,0 +1,29 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class LeapYear
+{
+	public static void main(String[] args)
+	{
+		 System.out.println("Enter the 4 digit number to check whether it is Leap year or not:");
+		   
+		   int number=UtilityScanner.integerInput();
+		  int flag=Utility.leapYear(number);
+		  if(flag==1)
+		  {
+			  System.out.println("Year is Leap year:");
+		  }
+		  else if(flag==0)
+		  {
+			  System.out.println("Year is not Leap year:");
+		  }
+		  else
+		  {
+			  System.out.println("Enter atleast 4 digit number:");
+		  }
+		
+	}
+
+}

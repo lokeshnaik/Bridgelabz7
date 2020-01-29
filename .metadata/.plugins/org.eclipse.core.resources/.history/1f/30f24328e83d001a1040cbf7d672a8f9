@@ -1,0 +1,9 @@
+package Functionalprograms;
+
+public class Gambler 
+{
+ public static void main(String[] args)
+ {
+	 System.out
+ }
+}

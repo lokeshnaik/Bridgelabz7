@@ -1,0 +1,28 @@
+
+public class Demo {
+	
+	public static void main(String[] args) {
+		Mediator mediator = new Mediator();
+		mediator.handleOperation(new Handler() {
+
+			@Override
+			public boolean handleMethod(String message) {
+				System.out.println(message);
+				return message != null;
+			}
+			
+			
+		});
+	}
+}
+class Mediator {
+	
+	public void handleOperation(Handler handler) {
+		handler.handleMethod("Hi");
+	}
+	
+}
+
+interface Handler {
+	boolean handleMethod(String message);
+}

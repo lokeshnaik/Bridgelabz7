@@ -1,0 +1,25 @@
+package com.bridgelabz.algorithmprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class DayOfWeek {
+
+	public static void main(String[] args)
+	{
+	System.out.println("Find the day,month and year:");
+	System.out.println("Enter the value of date in between 1 to 31");
+	int day=UtilityScanner.integerInput();
+	System.out.println("Enter the value of month in between 1 to 12");
+	int month=UtilityScanner.integerInput();
+	System.out.println("Enter the value of year in between -10000 to 10000");
+	int year=UtilityScanner.integerInput();
+	Utility.dayOfWeek(day, month, year);
+
+	}
+	public static void display(String day,String month,int year)
+	{
+	  System.out.println("Day= "+day+"  month= "+month+"  year="+year);	
+	 }
+
+}

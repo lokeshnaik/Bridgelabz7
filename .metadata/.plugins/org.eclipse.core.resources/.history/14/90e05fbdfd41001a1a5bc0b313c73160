@@ -1,0 +1,76 @@
+package bridgelabz2;
+
+import java.util.Scanner;
+
+public class lokesh
+{
+	public static void main(String[] args)
+	{
+	  Scanner sc =new Scanner(System.in);
+	  int number=sc.nextInt();
+	  int []array= new int[number];
+	  int i;
+	  for(i=0;i<number;i++)
+	  {
+	     Scanner sc =new Scanner(System.in);
+	      array[i]=sc.nextInt();  
+	  }
+	  mergesort(array,number);
+	}
+	
+	public static void merge1(int array[],int p[],int sp,int q[],int sq)
+	{
+	    int i=0,j=0,k=0;
+	    while(i<sp&&j<sq)
+	    {
+	        if(p[i]<q[j])
+	        {
+	            array[k]=p[i];
+	            k++;j++;
+	        }
+	        else
+	        {
+	            array[k]=q[j];
+	            k++;j++;
+	        }
+	    }
+	    while(i<sp)
+	    {
+	        array[k]=p[i];
+	        k++;i++;
+	    }
+	    while(j<sq)
+	    {
+	        array[k]=q[j];
+	        k++;j++;
+	    }
+	}
+	
+	public static void mergesort(int array[],int n)
+	{
+	    if(n==1)
+	    {
+	        return ;
+	    }
+	    int start=0;
+	    int end=n-1;
+	    int middle=(start+end)/2;
+	    int sp=middle-start+1;
+	    int sq=end-middle;
+	    int []p=new int[sp];
+	    int []q=new int[sq];
+	    int i;
+	    for(i=0;i<=middle;i++)
+	    {
+	        p[i]=array[i];
+	    }
+	    for(i=middle+1;i<=end;i++)
+	    {
+	        q[i-middle-1]=array[i];
+	    }
+	    mergesort(p,sp);
+	    mergesort(q,sq);
+	    merge1(array,p,sp,q,sq);
+	    
+	}
+}

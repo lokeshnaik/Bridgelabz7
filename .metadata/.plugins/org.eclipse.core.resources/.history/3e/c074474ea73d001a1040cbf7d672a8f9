@@ -1,0 +1,37 @@
+package defaultpackage;
+
+import static  org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Assert {
+     @Test
+	public void assertiontest()
+	{
+		String str1=new String ("Lokesh");
+		String str2=new String ("Lokesh");
+		String str3=null;
+		String str4="Lokesh";
+		String str5="Lokesh";
+		int val=7;
+		int val1=9;
+		String [] expectedArray= {"Lokesh","Loki","Naik"};
+		String [] resultArray= {"Lokesh","Loki","Naik"};
+		
+		assertEquals(str1,str2);
+		//Check for Equal
+		assertTrue(val<val1);
+		//Check for True
+		assertFalse(val<val1);
+		//check for False
+		assertNotNull( str1);
+		//Check for not Null
+		assertNull(str3);
+		//Check for Null
+		assertSame(str4,str5);
+		//Check whether  2 object reference  are pointing to same object
+		  assertNotSame(str1,str2);
+		  assertArrayEquals(expectedArray, resultArray);
+	}
+
+}

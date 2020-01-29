@@ -1,0 +1,36 @@
+
+class Employee
+{
+  int eid;
+  int salary;
+  static String ceo;
+  
+  static
+  {
+	  ceo="lokesh";
+	  System.out.println("In static");
+  }
+  
+   public void show()
+   {
+	   System.out.println(eid+ ":"+salary+":"+ceo+":");
+   }
+}
+
+
+
+
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+		Employee lokesh=new Employee();
+		
+		
+		Employee naik=new Employee();
+	
+		lokesh.show();
+		naik.show();
+	}
+}

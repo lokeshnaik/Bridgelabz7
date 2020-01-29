@@ -1,0 +1,38 @@
+
+class operation
+{
+	int num1;
+	int num2;
+	double result;
+	public void perform(int i,int j)
+	{
+		result=i+j;
+		System.out.println(result);
+	}
+	public  void perform(int i,double j)
+	{
+		result=i+j;
+		System.out.println(result);
+	}
+	public void perform(double i,double j)
+	{
+		result=i+j;
+		System.out.println(result);
+	}
+}
+
+
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+	   operation op=new operation();
+	    op.perform(5,5);
+	    
+	   op.perform(5, 5.5);
+	   
+	   op.perform(6.5, 5.5);
+	    
+	}
+}

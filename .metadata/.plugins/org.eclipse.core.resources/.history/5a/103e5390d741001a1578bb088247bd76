@@ -1,0 +1,41 @@
+package com.bridgelabz.utility;
+
+import java.util.Scanner;
+
+public class UtilityScanner 
+{/*
+	public static int integerinput()
+	{
+		 try (Scanner scanner = new Scanner(System.in)) {
+			return scanner.nextInt();
+		}
+	}
+	public static String stringinput()
+	{
+		 try (Scanner scanner = new Scanner(System.in)) {
+			return scanner.nextLine();
+		}
+	}
+   */
+	
+
+	private static final Scanner sc=new Scanner(System.in);
+	public static int integerInput()
+	{
+		return sc.nextInt();	
+	}
+	public static String stringInput()
+	{
+		return sc.nextLine();	
+	}
+	public static float floatInput()
+	{
+		return sc.nextFloat();	
+	}
+	public static double doubleInput()
+	{
+		return sc.nextDouble();	
+	}
+	
+	
+}

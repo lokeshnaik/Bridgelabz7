@@ -1,0 +1,19 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class PermutationOfStringRecursive {
+
+	public static void main(String[] args)
+	{
+		System.out.println("Enter the string which you want to find permutation");
+		String string=UtilityScanner.stringInput();
+		int number;
+		number=string.length();
+		Utility.permutationOfStringRecursive(string,0,number-1);
+		
+
+	}
+
+}

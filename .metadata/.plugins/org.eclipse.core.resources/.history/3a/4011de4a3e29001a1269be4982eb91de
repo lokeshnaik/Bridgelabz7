@@ -1,0 +1,31 @@
+
+
+interface Abc
+{
+	void show();
+	default void oper()
+	{
+		System.out.println("Hi lokesh");
+	}
+}
+
+class Demo implements Abc
+{
+  public  void show()
+   {
+	   System.out.println("Your have positive attitude Lokesh");
+   }
+   public void oper()
+	{
+		System.out.println("Your doing well Lokesh");
+	}
+}
+public class firstclass 
+{
+	public static void main(String args[])
+	{
+     Abc obj=new Demo();
+     obj.show();
+     obj.oper();
+	}
+}

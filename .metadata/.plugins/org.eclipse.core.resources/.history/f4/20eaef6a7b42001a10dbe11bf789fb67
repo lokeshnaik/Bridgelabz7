@@ -1,0 +1,15 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.bridgelabz.utility.Utility;
+
+class StringReplace {
+
+	@Test
+	void test() {
+	String string=Utility.stringReplace("Hello <<UserName>>,How are you?", "LOKESH NAIK");
+	assertEquals("Hello LOKESH NAIK ,How are you?",string);
+	}
+
+}

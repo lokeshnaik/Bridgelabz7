@@ -1,0 +1,13 @@
+package com.bridgelabz.functionalprograms;
+
+
+import com.bridgelabz.utility.UtilityScanner;
+
+public class PowerOfTwo
+{
+  public static void main(String[] args)
+  {
+	  System.out.println("Enter the number upto which you have print power if 2:");
+	    int number=UtilityScanner.integerinput();
+  }
+}

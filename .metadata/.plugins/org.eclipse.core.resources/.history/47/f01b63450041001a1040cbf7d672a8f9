@@ -1,0 +1,22 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class StopWatch {
+
+	public static void main(String[] args)
+	{
+	  System.out.println("Enter any value from 1 to 9 to start the stopwatch:");
+	  int startstopwatch=UtilityScanner.integerInput();
+	  double starttime=Utility.start(startstopwatch);
+	  System.out.println("Start Time= "+starttime);
+	  System.out.println("Enter any value from 1 to 9 to stop the stopwatch:");
+	  int stoptopwatch=UtilityScanner.integerInput();
+	  double stoptime=Utility.stop(stoptopwatch);
+	  System.out.println("Stoop Time= "+stoptime);
+	  double ElapsedTime=Utility.elapsedtime(starttime,stoptime);
+	  System.out.println("Elapsed time="+ElapsedTime);
+	}
+
+}

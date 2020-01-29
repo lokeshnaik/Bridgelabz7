@@ -1,0 +1,20 @@
+package com.bridgelabz.algorithmprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class TemperatureConversion {
+
+	public static void main(String[] args)
+	{
+		
+		System.out.println("Choose the option in between 1 and 2: ");
+		System.out.println("1.Celsius to Fahrenhiet ");
+		System.out.println("2.Fahrenhiet to Celsius");
+        int option=UtilityScanner.integerInput();
+        
+        Utility.temperatureConversion(option);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class WindChill {
+
+	public static void main(String[] args) 
+	{
+	 System.out.println("Enter the temperature less than 50");
+	 double temperature=UtilityScanner.doubleInput();
+	 System.out.println("Enter the windSpeed greater than 3 and less than 120");
+	 double windspeed=UtilityScanner.doubleInput();
+	 double weather=Utility.windChill(temperature,windspeed);
+	if(weather==0)
+	{
+		System.out.println("Enter Invaid reading of temperature or windspeed");
+	}
+	else
+	{
+		System.out.println("Value of WindChill is= "+weather);
+	}
+
+	}
+
+}

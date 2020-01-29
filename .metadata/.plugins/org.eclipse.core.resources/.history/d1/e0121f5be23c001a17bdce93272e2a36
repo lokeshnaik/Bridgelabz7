@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+		List<Integer> ls=new ArrayList<>();
+		
+		ls.add(7);
+		ls.add(5);
+		ls.add(8);
+		ls.add(9);
+		ls.add(0,1);
+		for(int i=0;i<ls.size();i++)
+		{
+			System.out.println(ls.get(i));
+		}
+		System.out.println("In a sorted order:");
+		Collections.sort(ls);
+		for(int i=0;i<ls.size();i++)
+		{
+			System.out.println(ls.get(i));
+		}
+		System.out.println("In a descending  order:");
+		Collections.reverse(ls);;
+		for(int i=0;i<ls.size();i++)
+		{
+			System.out.println(ls.get(i));
+		}
+		
+	}
+}

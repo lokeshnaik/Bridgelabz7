@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LeapYear" project="BridgeLabz1" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="junitpackage.LeapYear" time="0.047" displayname="LeapYear" uniqueid="[engine:junit-jupiter]/[class:junitpackage.LeapYear]">
+    <testcase name="test" classname="junitpackage.LeapYear" time="0.035" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:junitpackage.LeapYear]/[method:test()]"/>
+    <testcase name="test1" classname="junitpackage.LeapYear" time="0.002" displayname="test1()" uniqueid="[engine:junit-jupiter]/[class:junitpackage.LeapYear]/[method:test1()]"/>
+    <testcase name="test2" classname="junitpackage.LeapYear" time="0.01" displayname="test2()" uniqueid="[engine:junit-jupiter]/[class:junitpackage.LeapYear]/[method:test2()]"/>
+  </testsuite>
+</testrun>

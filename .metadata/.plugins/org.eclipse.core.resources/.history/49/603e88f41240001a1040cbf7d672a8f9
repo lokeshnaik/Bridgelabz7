@@ -1,0 +1,17 @@
+package com.bridgelabz.algorithmprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class SquareRoot {
+
+	public static void main(String[] args)
+	{
+		System.out.println("Enter the value to find the square root:");
+		double value=UtilityScanner.doubleInput();
+		double squarerootvalue=Utility.squareRoot(value);
+		System.out.println("Squareroot value of"+value+"is="+squarerootvalue);
+
+	}
+
+}

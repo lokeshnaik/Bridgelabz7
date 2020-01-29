@@ -1,0 +1,16 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class SumOfThree {
+
+	public static void main(String[] args)
+	{
+		System.out.println("Enter no of element you want in an array:");
+		int number=UtilityScanner.integerInput();
+		int count=Utility.sumOfThree(number);
+        System.out.println("No of triplets whose sum is zero"+count);
+	}
+
+}

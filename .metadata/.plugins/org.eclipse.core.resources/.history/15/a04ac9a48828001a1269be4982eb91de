@@ -1,0 +1,30 @@
+
+class Lokesh
+{
+	int x,y;
+	
+	public  void sum()
+	{
+		System.out.println(x+y);
+	}
+}
+
+class Loki extends Lokesh
+{
+	int x,y;
+	public void substract()
+	{
+		System.out.println(x-y);
+	}
+}
+
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+	   Loki lok=new Loki();
+	   lok.sum();
+	   lok.substract();
+	}
+}

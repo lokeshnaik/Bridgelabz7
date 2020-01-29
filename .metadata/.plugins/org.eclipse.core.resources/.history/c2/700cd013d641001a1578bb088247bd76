@@ -1,0 +1,16 @@
+package com.bridgelabz.algorithmprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class VendingMachine {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the value that you want to have change:");
+		int value=UtilityScanner.integerInput();
+		Utility.vendingMachine(value);
+		
+	}
+	
+}

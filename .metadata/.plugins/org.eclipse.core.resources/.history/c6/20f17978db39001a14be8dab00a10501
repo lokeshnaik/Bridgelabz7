@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+		List<Integer> v=new ArrayList<>();
+		v.add(9);
+		v.add(4);
+		v.add(1);
+		v.add(7);
+		
+		Collections.sort(v);
+		for(int i=0;i<v.size();i++)
+		{
+			System.out.println(v.get(i));
+		}
+	}
+}

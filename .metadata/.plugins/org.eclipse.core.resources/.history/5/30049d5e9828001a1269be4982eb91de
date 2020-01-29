@@ -1,0 +1,26 @@
+class A
+{
+	public void oper()
+	{
+		System.out.println("In A");
+	}
+}
+
+class B extends A
+{
+	public void oper()
+	{
+		super.oper();
+		System.out.println("In B");
+	}
+	
+}
+
+public class firstclass
+{
+	public static void main(String args[])
+	{
+		B b=new B();
+		b.oper();
+	}
+}

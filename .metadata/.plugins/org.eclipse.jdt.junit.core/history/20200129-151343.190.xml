@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringReplace.test2" project="BridgeLabz1" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="StringReplace" time="0.108" uniqueid="[engine:junit-jupiter]/[class:StringReplace]">
+    <testcase name="test2" classname="StringReplace" time="0.108" displayname="test2()" uniqueid="[engine:junit-jupiter]/[class:StringReplace]/[method:test2()]"/>
+  </testsuite>
+</testrun>

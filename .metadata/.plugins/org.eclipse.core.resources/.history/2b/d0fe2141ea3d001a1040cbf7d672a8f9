@@ -1,0 +1,13 @@
+package Functionalprograms;
+
+import java.util.Scanner;
+
+public class Utility 
+{
+
+	public static int integerinput()
+	{
+		 Scanner scanner=new Scanner(System.in);
+		return scanner.nextInt();
+	}
+}

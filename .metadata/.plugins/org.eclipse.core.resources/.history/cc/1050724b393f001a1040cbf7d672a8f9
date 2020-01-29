@@ -1,0 +1,18 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class WindChill {
+
+	public static void main(String[] args) 
+	{
+	 System.out.println("Enter the temperature less than 50");
+	 float temperature=UtilityScanner.floatInput();
+	 System.out.println("Enter the windSpeed greater than 3 and less than 120");
+	 float windspeed=UtilityScanner.floatInput();
+	float weather=Utility.windChill(temperature,windspeed);
+
+	}
+
+}

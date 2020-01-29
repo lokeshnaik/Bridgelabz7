@@ -1,0 +1,28 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class firstclass
+{
+	public static void  main(String[] args)throws Exception
+	{
+		int n=0;
+		BufferedReader br=null;
+		try
+		{
+			System.out.println("Enter the value you want to display:");
+			InputStreamReader is=new InputStreamReader(System.in);
+			br=new BufferedReader(is);
+			n=Integer.parseInt(br.readLine());
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println("Error");
+		}
+		finally
+		{
+			br.close();
+		}
+		System.out.println("Output is: "+n);
+	}
+}

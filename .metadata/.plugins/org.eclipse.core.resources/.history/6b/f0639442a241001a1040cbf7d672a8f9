@@ -1,0 +1,31 @@
+package com.bridgelabz.algorithmprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class SumOfPowerOfTwo {
+
+	public static void main(String[] args)
+	{
+		System.out.println("Enter the decimal value to find sum of power of two:");
+		int decimalvalue=UtilityScanner.integerInput();
+		System.out.print(decimalvalue+"= ");
+		Utility.sumOfPowerOfTwo(decimalvalue);
+
+	}
+	
+	public static void display(int array[],int size)
+	{
+		int i,value;
+		for(i=size-1;i>=0;i--)
+		{
+			if(array[i]==1)
+			{
+				value=(int)Math.pow(2, i);
+				System.out.print(value+" + ");
+			}
+		}
+		System.out.print(0);
+	}
+
+}

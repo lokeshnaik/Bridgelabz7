@@ -1,0 +1,93 @@
+import com.bridgelabz.algorithmprograms.MergeSort;
+package com.bridgelabz.algorithmprograms;
+
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class MergeSort {
+
+	public static void main(String[] args) 
+	{
+		  System.out.println("Enter the number of elements you want to enter in the array to sort using mergesort:");
+		  int number=UtilityScanner.integerInput();
+		  int []array= new int[number];
+		  int i;
+		  System.out.println("Enter the value of each element in the array:");
+		  for(i=0;i<number;i++)
+		  { 
+		      array[i]=UtilityScanner.integerInput();  
+		  }
+		  Utility.mergeSort(array,number);
+		  
+	}
+	
+	public static void display(int array[],int number)
+	{
+		int i;
+		for(i=0;i<number;i++)
+		{
+			  System.out.println(array[i]+" ");
+		  }
+
+	}
+
+}
+
+
+public static void merge1(int array[],int p[],int sp,int q[],int sq)
+	{
+	    int i=0,j=0,k=0;
+	    while(i<sp&&j<sq)
+	    {
+	        if(p[i]<q[j])
+	        {
+	            array[k]=p[i];
+	            k++;j++;
+	        }
+	        else
+	        {
+	            array[k]=q[j];
+	            k++;j++;
+	        }
+	    }
+	    while(i<sp)
+	    {
+	        array[k]=p[i];
+	        k++;i++;
+	    }
+	    while(j<sq)
+	    {
+	        array[k]=q[j];
+	        k++;j++;
+	    }
+	    MergeSort.display(array,k);
+	}
+  
+  public static void mergeSort(int array[],int number)
+  {
+	  if(number==1)
+	    {
+	        return ;
+	    }
+	    int start=0;
+	    int end=number-1;
+	    int middle=(start+end)/2;
+	    int sp=middle-start+1;
+	    int sq=end-middle;
+	    int []p=new int[sp];
+	    int []q=new int[sq];
+	    int i;
+	    for(i=0;i<=middle;i++)
+	    {
+	        p[i]=array[i];
+	    }
+	    for(i=middle+1;i<=end;i++)
+	    {
+	        q[i-middle-1]=array[i];
+	    }
+	    mergeSort(p,sp);
+	    mergeSort(q,sq);
+	    merge1(array,p,sp,q,sq);
+  }
+  

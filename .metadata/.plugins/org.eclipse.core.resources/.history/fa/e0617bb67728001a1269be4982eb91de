@@ -1,0 +1,32 @@
+
+class Employee
+{
+
+  public void output()
+  {
+	  
+  }
+  
+ static class Inner
+   {
+	  public void display()
+	  {
+		  System.out.println("Hi Lokesh");
+	  }
+   }
+}
+
+
+
+
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+		Employee lokesh=new Employee();
+		  
+		Employee.Inner obj=new Employee.Inner();
+		obj.display();
+	}
+}

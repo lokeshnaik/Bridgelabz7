@@ -1,0 +1,55 @@
+package Functionalprograms;
+
+public class Program 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		System.out.println("1.FlipCoin");
+		System.out.println("2.HarmonicNumber");
+		System.out.println("3.LeapYear");
+		System.out.println("4.PowerOfTwo");
+		System.out.println("5.PrimeFactors");
+		
+		System.out.println("Enter the option:");
+		int option=Utility.integerinput();
+		switch(option)
+		{
+		case 1:
+		{
+			Flipcoin fc=new Flipcoin();
+			fc.flipcoin();
+			break;
+		}
+		case 2:
+		{
+			HarmonicNumber hn=new HarmonicNumber();
+			hn.harmoicnumber();
+			break;
+		}
+		case 3:
+		{
+			LeapYear lp=new LeapYear();
+			lp.leapyear();
+		}
+		case 4:
+		{
+			PowerOfTwo pt=new PowerOfTwo();
+			pt.poweroftwo();
+		}
+		case 5:
+		{
+			PrimeFactors pf=new PrimeFactors();
+			pf.primefactors();
+		}
+		default:
+		{
+			System.out.println("Invalid option:");
+			break;
+		}
+		}
+
+	}
+
+}

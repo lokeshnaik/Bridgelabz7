@@ -1,0 +1,28 @@
+abstract class Employee
+{
+	abstract void display();
+	void display1()
+	{
+		System.out.println("Hey:");
+	}
+	
+}
+
+class Person extends Employee
+{
+	void display()
+	{
+		System.out.println("Lokesh Naik");
+	}
+}
+
+public class firstclass
+{
+	public static void main(String [] args)
+	{
+		Person p=new Person();
+		p.display1();
+		p.display();
+		
+	}
+}

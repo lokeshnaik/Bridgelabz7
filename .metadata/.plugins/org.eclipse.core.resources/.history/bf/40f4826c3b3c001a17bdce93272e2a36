@@ -1,0 +1,59 @@
+
+ class Lokesh
+{
+	 public void run()
+     {
+   	  int i;
+   		 for(i=0;i<5;i++)
+   		 {
+   	 try
+   	 {
+   		 
+   			 System.out.println("Hey Lokesh ");
+   			 Thread.sleep(1000);
+   		 
+   	 }
+   	 catch(Exception e)
+   	 {
+   		  
+   	 }
+     }
+     }	
+}
+ 
+ class Naik
+ {
+	 public void run()
+     {
+  	   int i;
+  	   for(i=0;i<5;i++)
+  	   {
+  		 
+  	  try
+  	  {
+  		    System.out.println("Hardwork,willpower and dedication");
+	    		   Thread.sleep(1000);
+	    	   
+  	  }
+  	  catch(Exception e)
+  	  {
+  		  
+  	  }
+     }
+     }
+	 
+ }
+
+public class firstclass
+{
+	public static void main(String [] args)
+	{
+	Lokesh loki=new Lokesh();
+	Naik nk=new Naik();
+	
+	loki.run();
+	nk.run();
+						
+			
+    }
+}

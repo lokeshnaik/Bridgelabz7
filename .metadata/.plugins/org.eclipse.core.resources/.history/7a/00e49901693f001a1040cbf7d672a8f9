@@ -1,0 +1,33 @@
+package com.bridgelabz.algorithmprograms;
+
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class SwitchProgram{
+
+	public static void main(String[] args) 
+	{
+	 System.out.println("Enter no of integer you want in n array:");
+	 int number=UtilityScanner.integerInput();
+	 int []array=new int[number];
+     int i;
+     for(i=0;i<number;i++)
+     {
+    	 array[i]=UtilityScanner.integerInput();
+     }
+     System.out.println("Enter the number which you want to search:");
+     int number1=UtilityScanner.integerInput();
+     int index;
+     index=Utility.switchProgram(array,number,number1);
+     if(index==0)
+     {
+    	 System.out.println("Element is not found:");
+     }
+     else
+     {
+    	 System.out.println("Element is  found at index:"+index);
+     }
+	}
+
+}

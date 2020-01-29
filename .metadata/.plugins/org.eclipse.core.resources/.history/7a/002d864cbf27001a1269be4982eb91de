@@ -1,0 +1,26 @@
+
+public class firstclass 
+{
+  public static void main(String[] args)
+  {
+	  char ch;
+   int i=6,j=6;
+   for(i=1;i<=6;i++)
+   {
+	   
+	   for(j=1;j<=6;j++)
+	   {
+		   if(i==1||i==6||j==1||j==6)
+		   {
+			   System.out.print("$");
+			   System.out.print(" ");
+		   }
+		   else
+		   {
+			   System.out.print(" ");
+		   }
+	   }
+	   System.out.println();
+   }
+  }
+}

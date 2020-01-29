@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+		List<Integer> v=new ArrayList<>();
+		v.add(91);
+		v.add(48);
+		v.add(19);
+		v.add(77);
+		
+		System.out.println("Ascending order:");
+		Collections.sort(v);
+		for(int i=0;i<v.size();i++)
+		{
+			System.out.println(v.get(i));
+		}
+		System.out.println("Descending order:");
+		Collections.reverse(v);;
+		for(int i=0;i<v.size();i++)
+		{
+			System.out.println(v.get(i));
+		}
+		 int i,j;
+		Comparator<Integer> c=new Comparator<Integer>()
+				{
+			        public int compare(Integer i,Integer j)
+			        {
+			        	if(i%10>j%10)
+			        	{
+			        		return 1;
+			        	}
+			        	else
+			        	{
+			        		return -1;
+			        	}
+			        }
+				};
+				for( i=0;i<v.size();i++)
+				{
+					System.out.println(v.get(i));
+				}
+	}
+}

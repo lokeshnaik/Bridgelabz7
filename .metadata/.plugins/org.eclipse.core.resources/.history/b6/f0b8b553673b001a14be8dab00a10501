@@ -1,0 +1,21 @@
+final class Employee
+{
+	
+	void display1()
+	{
+		System.out.println("Hey:");
+	}
+	
+}
+
+
+public class firstclass
+{
+	public static void main(String [] args)
+	{
+		Employee p=new Employee();
+		p.display1();
+	
+		
+	}
+}

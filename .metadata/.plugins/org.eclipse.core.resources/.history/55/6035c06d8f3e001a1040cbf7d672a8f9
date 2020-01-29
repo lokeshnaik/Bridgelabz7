@@ -1,0 +1,15 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class CouponNumber {
+
+	public static void main(String[] args)
+	{
+	  int number=UtilityScanner.integerInput();
+	  int counting= Utility.couponNumber(number);
+     System.out.println("Number of time we generated coupon code:"+counting);
+	}
+
+}

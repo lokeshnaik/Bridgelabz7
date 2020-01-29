@@ -1,0 +1,31 @@
+package com.bridgelabz.functionalprograms;
+
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class Gambler
+{
+	public static void main(String[] args)
+	{
+		    
+		    	System.out.println("Enter the values of  $Stake");
+		        Scanner scanner=new Scanner(System.in);
+		        int Stake1=scanner.nextInt();
+		        System.out.println("Enter the values of  $Goal");
+		        Scanner scanner1=new Scanner(System.in);
+		        int Goal=scanner1.nextInt();
+		        System.out.println("Enter  number of times game to be played");
+		        Scanner scanner2=new Scanner(System.in);
+		        int Numberofgames=scanner2.nextInt();
+		        Utility.gambler(Stake1,Goal,Numberofgames);
+		    
+	}
+	public static void display(float wins ,float winpercentage ,float losspercentage ) 
+	{
+		    System.out.println("Number of times won are:"+wins);
+			System.out.println("Win percentage is:"+winpercentage);
+	        System.out.println("Loss percentage is:"+losspercentage);
+	}
+
+}

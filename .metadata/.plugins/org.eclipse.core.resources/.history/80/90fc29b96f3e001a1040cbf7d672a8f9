@@ -1,0 +1,16 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.UtilityScanner;
+
+public class StringReplace
+{
+	 
+
+	public void stringreplace()
+	{
+		System.out.println("Enter the name whom you want to wish");
+		String str ="Hello <<UserName>>,How are you?";
+		String str1 = UtilityScanner.stringinput();
+		System.out.println(str.replace(" <<UserName>> ", str1));
+	}
+}

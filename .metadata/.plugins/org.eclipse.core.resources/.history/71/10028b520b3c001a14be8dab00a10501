@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class firstclass
+{
+	public static void main(String [] args)throws Exception
+	{
+		int i,j,k;
+		System.out.println("Enter the value of i");
+		Scanner sc=new Scanner(System.in);
+		i=sc.nextInt();
+		System.out.println("Enter the value of i");
+		Scanner is=new Scanner(System.in);
+		j=is.nextInt();
+		k=i/j;
+		
+		try
+		{
+			if(k==0)
+			{
+				throw new Exception();
+			}
+			System.out.println("Output is:"+k);
+		}
+		catch(Exception e)
+		{
+			System.out.println("Error");
+		}
+		
+	}
+}

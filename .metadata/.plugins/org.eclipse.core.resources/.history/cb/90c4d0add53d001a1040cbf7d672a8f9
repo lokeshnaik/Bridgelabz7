@@ -1,0 +1,19 @@
+package Functionalprograms;
+
+import java.util.Scanner;
+
+public class PowerOfTwo
+{
+  public static void main(String[] args)
+  {
+	  System.out.println("Enter the number upto which you have print power if 2:");
+	   Scanner sc=new Scanner(System.in);
+	   int n=sc.nextInt();
+	   int i=0;
+	   while(i!=n)
+	   {
+		   System.out.println((int)(Math.pow(2, i)));
+		   i++;
+	   }
+  }
+}

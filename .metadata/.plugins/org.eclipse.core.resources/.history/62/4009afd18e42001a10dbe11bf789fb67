@@ -1,0 +1,18 @@
+package junitpackage;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.bridgelabz.utility.Utility;
+
+class LeapYear {
+
+	@Test
+	void test() 
+	{
+		int number=Utility.leapYear(2020);
+		assertEquals(1,number);
+	}
+
+}

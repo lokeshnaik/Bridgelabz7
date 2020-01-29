@@ -1,0 +1,26 @@
+
+
+public class firstclass
+{
+	public static void main(String [] args)
+	{
+		try
+		{
+			int i=7;
+			int j=5;
+			int k=i/j;
+			System.out.println("Output is"+k);
+			
+		}
+		catch(ArithmeticException  | ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Error");
+		}
+		finally
+		{
+			System.out.println("Hard work,will power and dedication");
+		}
+		
+	}
+	
+}

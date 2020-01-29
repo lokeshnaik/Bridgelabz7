@@ -1,0 +1,33 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.UtilityScanner;
+
+
+
+public class PrimeFactors 
+{
+  public  void primefactors()
+  {
+	  System.out.println("Enter the number to find the prime factors:");
+	 
+	  int n=UtilityScanner.integerinput();
+	  int i;
+	  while(n%2==0)
+	  {
+		  System.out.print("2 "); 
+		  n=n/2;
+	  }
+	  for(i=3;i<=Math.sqrt(n);i++)
+	  {
+		 while(n%i==0)
+		 {
+			 System.out.print(i+" ");
+			 n=n/i;
+		 }
+	  }
+	  if(n>2)
+	  {
+		  System.out.println(n);
+	  }
+  }
+}

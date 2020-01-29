@@ -1,0 +1,27 @@
+package com.bridgelabz.algorithmprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class VendingMachine {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the value that you want to have change:");
+		int value=UtilityScanner.integerInput();
+		Utility.vendingMachine(value);
+		
+
+	}
+	public static void display(int array1[],int j,int notes)
+	{
+		int i;
+		for(i=0;i<=j;i++)
+		{
+			System.out.print(array1[i]+" ");
+		}
+		System.out.println();
+		System.out.println("No of notes="+notes);
+	}
+
+}

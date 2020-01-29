@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+
+
+
+public class firstclass
+{
+	public static void main(String[] args)
+	{
+		List values=new ArrayList();
+		
+		values.add(7);
+		values.add(5);
+		values.add(1);
+		
+		values.add(1,4);
+		values.add(0,1);
+		
+		Iterator it=values.iterator();
+		
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}	
+	}
+}

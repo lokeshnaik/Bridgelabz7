@@ -1,0 +1,34 @@
+package com.bridgelabz.algorithmprograms;
+
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class MergeSort {
+
+	public static void main(String[] args) 
+	{
+		  System.out.println("Enter the number of elements you want to enter in the array to sort using mergesort:");
+		  int number=UtilityScanner.integerInput();
+		  int []array= new int[number];
+		  int i;
+		  System.out.println("Enter the value of each element in the array:");
+		  for(i=0;i<number;i++)
+		  { 
+		      array[i]=UtilityScanner.integerInput();  
+		  }
+		  Utility.mergeSort(array,number);
+		  
+	}
+	
+	public static void display(int array[],int number)
+	{
+		int i;
+		for(i=0;i<number;i++)
+		{
+			  System.out.println(array[i]+" ");
+		  }
+
+	}
+
+}

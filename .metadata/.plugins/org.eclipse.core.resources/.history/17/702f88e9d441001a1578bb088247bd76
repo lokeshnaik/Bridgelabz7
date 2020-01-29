@@ -1,0 +1,21 @@
+package com.bridgelabz.algorithmprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class MonthlyPayment {
+
+	public static void main(String[] args)
+	{
+	System.out.println("To calculate monthly payment we need Personal loan,Years and Percent:");	
+	System.out.println("Enter the value of Personal loan:"); 
+	double personalloan=UtilityScanner.doubleInput();
+	System.out.println("Enter the value of Years:"); 
+	int years=UtilityScanner.integerInput();
+	System.out.println("Enter the value of Percent:"); 
+	double percent=UtilityScanner.doubleInput();
+	 double Payment=Utility.monthlyPayment(personalloan,years,percent);
+	 System.out.println("Payment="+Payment);
+	 }
+
+}

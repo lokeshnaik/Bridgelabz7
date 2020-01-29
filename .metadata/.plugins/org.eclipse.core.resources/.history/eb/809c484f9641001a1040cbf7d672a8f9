@@ -1,0 +1,17 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class TwoDArray {
+
+	public static void main(String[] args) 
+	{
+	  System.out.println("Enter number of rows you want");	
+     int row=UtilityScanner.integerInput();
+     System.out.println("Enter number of column you want");	
+     int column=UtilityScanner.integerInput();
+     Utility.twoDArray(row,column);
+	}
+
+}

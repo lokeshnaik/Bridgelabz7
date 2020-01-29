@@ -1,0 +1,22 @@
+package com.bridgelabz.functionalprograms;
+
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+
+public class HarmonicNumber 
+{
+	public static void main(String[] args)
+	  {
+		  
+		  System.out.println("Enter the number to find the Nth harmonic");
+		  int number=UtilityScanner.integerInput();
+		  Utility.harmonicNumber(number);
+	  }
+	public static void display(int number,float harmonic)
+	{
+		 System.out.println("The "+number+"th"+ " harmonic number is="+harmonic);
+	}
+
+}

@@ -1,0 +1,22 @@
+public class firstclass
+{
+	public static void main(String [] args)throws Exception
+	{
+		int i,j;
+		i=8;
+		j=9;
+		int k=i/j;
+		try
+		{
+			if(k==0)
+			{
+				throw new Exception();
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("Error");
+		}
+		
+	}
+}

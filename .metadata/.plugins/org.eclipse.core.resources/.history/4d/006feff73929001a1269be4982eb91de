@@ -1,0 +1,15 @@
+
+
+interface Abc
+{
+	void show();
+}
+
+public class firstclass 
+{
+	public static void main(String args[])
+	{
+     Abc obj=()->System.out.println("Im he best");
+       obj.show();
+	}
+}

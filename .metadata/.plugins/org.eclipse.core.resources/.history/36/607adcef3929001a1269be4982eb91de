@@ -1,0 +1,31 @@
+class A
+{
+	private int i;
+	private String name;
+	public int getI() {
+		return i;
+	}
+	public void setI(int i) {
+		this.i = i;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}
+
+public class firstclass 
+{
+	public static void main(String args[])
+	{
+		A b=new A();
+		b.setI(7);
+		b.setName("Lokesh");
+		
+		System.out.println(b.getName());
+		System.out.println(b.getI());
+	}
+}

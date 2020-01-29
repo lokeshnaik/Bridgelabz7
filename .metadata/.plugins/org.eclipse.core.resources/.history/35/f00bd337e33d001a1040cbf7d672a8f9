@@ -1,0 +1,33 @@
+package Functionalprograms;
+
+import java.util.Scanner;
+
+public class Flipcoin 
+{
+   public static void main(String[] args)
+   {
+	   
+	   System.out.println("Enter the number of times a coin to be flipped");
+	   Scanner sc\=new Scanner(System.in);
+	   int n=sc.nextInt();
+	   float j=0,k=0;
+	   for(int i=0;i<n;i++)
+	   {
+		   
+		   float z=(float)(Math.random()*2);
+		   if(z<0.5)
+		   {
+			  j++;
+		   }
+		   else
+		   {
+			   k++;
+		   }
+	   }
+	  float t=(float)((j/n)*100);
+	  float h=(float)((k/n)*100);
+	  System.out.println("Percentage of tail="+t);
+	  System.out.println("Percentage of head="+h);
+	   
+   }
+}

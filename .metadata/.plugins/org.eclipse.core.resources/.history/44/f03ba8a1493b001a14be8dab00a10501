@@ -1,0 +1,33 @@
+class Employee
+{
+	int eid;
+	int salary;
+	static String name;
+	static
+	{
+		name="Lokesh";
+	}
+	public void show()
+	{
+		System.out.println(eid+": "+salary+": "+name+": ");
+	}
+}
+
+public class firstclass
+{
+	public static void main(String[ ] args)
+	{
+		Employee lokesh=new Employee();
+		lokesh.eid=7;
+		lokesh.salary=1000000;
+		lokesh.name="Abhi";
+		
+		Employee sai=new Employee();
+		sai.eid=7;
+		sai.salary=4000000;
+		sai.name="Akshay";
+		
+		lokesh.show();
+		sai.show();
+	}
+}

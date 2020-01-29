@@ -1,0 +1,62 @@
+class Lokesh
+{
+	public void show()
+	{
+
+		int i;
+		for(i=0;i<5;i++)
+		{
+			System.out.println("Hey Lokesh:");
+			try
+			   {
+				   Thread.sleep(1000);
+			   }
+			   catch(Exception e)
+			   {
+				   
+			   }
+		}
+		
+	}		
+}
+class Naik
+{
+	public void show()
+	{
+		int i;
+		for(i=0;i<5;i++)
+		{
+			System.out.println(" Hardwork,willpower and dedication brngs u success");
+			try
+			   {
+		         Thread.sleep(1000);	
+			   }
+			   catch(Exception e)
+			   {
+				   
+			   }
+	    }
+		
+	}		
+}
+
+public class firstclass
+{
+	public static void main(String [] args)
+		
+	{
+		Lokesh loki=new Lokesh();
+		Naik nk=new Naik();
+		
+		loki.show();
+		try
+		{
+			Thread.sleep(100);
+		}
+		catch(Exception e)
+		{
+			
+		}
+		nk.show();
+	}
+}

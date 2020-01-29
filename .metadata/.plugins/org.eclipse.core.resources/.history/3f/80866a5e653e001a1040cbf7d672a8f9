@@ -1,0 +1,17 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+
+public class HarmonicNumber 
+{
+	public static void main(String[] args)
+	  {
+		  float harmonic=1f;
+		  System.out.println("Enter the number to find the Nth harmonic");
+		  int n=UtilityScanner.integerinput();
+		  Utility.harmonicNumber(n);
+	  }
+
+}

@@ -1,0 +1,16 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class PermutationOfStringIterative {
+
+	public static void main(String[] args)
+	{
+	 System.out.println("Enter the string which you find the permutation:");
+	 String string=UtilityScanner.stringInput();
+	 Utility.permutationOfStringIterative(string);
+
+	}
+
+}

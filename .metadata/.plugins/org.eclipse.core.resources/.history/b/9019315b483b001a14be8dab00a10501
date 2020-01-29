@@ -1,0 +1,22 @@
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class firstclass
+{
+	public static void main(String [] args)
+	{
+		Set <Integer> s=new TreeSet<>();
+		
+		s.add(7);
+		s.add(9);
+		s.add(8);
+		s.add(20);
+		
+		for(int i:s)
+		{
+			System.out.println(i);
+		}
+	}
+	
+}

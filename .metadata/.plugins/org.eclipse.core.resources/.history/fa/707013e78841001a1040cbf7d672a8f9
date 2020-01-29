@@ -1,0 +1,22 @@
+package com.bridgelabz.functionalprograms;
+
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class FlipCoin
+{
+	public static void main(String[] args)
+	{
+	   System.out.println("Enter the number of times a coin to be flipped");
+	  int n=UtilityScanner.integerInput();
+	   Utility.filpCoin(n);
+	   
+	   
+   }
+public static void display(float t,float h)
+{
+	 System.out.println("Percentage of tail="+t);
+	 System.out.println("Percentage of head="+h);
+	}
+}

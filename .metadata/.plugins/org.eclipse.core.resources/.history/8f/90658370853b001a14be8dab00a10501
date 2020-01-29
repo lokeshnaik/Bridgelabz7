@@ -1,0 +1,15 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class firstclass
+{
+	public static void main(String [] args) throws Exception
+	{
+       BufferedReader br=null;
+       String line;
+       
+       FileReader fr=new FileReader("LokeshException.java");
+       br=new BufferedReader(fr);
+	}
+}

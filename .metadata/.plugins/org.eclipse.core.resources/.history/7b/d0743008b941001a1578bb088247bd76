@@ -1,0 +1,21 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class QuadraticRoots {
+
+	public static void main(String[] args)
+	{
+		System.out.println("Finding the roots of a quadratic expresion:");
+		System.out.println("Enter the value of x^2 coefficient:");
+		int a=UtilityScanner.integerInput();
+		System.out.println("Enter the value of x coefficient:");
+		int b=UtilityScanner.integerInput();
+		System.out.println("Enter the value of constant:");
+		int c=UtilityScanner.integerInput();
+		Utility.quadraticRoots(a,b,c);
+	}
+	
+
+}

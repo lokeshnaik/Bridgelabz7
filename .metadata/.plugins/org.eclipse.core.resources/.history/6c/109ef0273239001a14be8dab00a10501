@@ -1,0 +1,40 @@
+class counter
+{
+	int count;
+	public  synchronized void   increment()
+	{
+		count++;
+	}
+}
+
+public class firstclass
+{
+	public static void main(String[] args) throws Exception
+	{
+		counter c=new counter();
+		Thread obj=new Thread(()->
+				{
+					int i;
+					for(i=0;i<100;i++)
+					{
+						c.increment();
+					}
+				});
+		
+		Thread obj1=new Thread(()->
+		{
+			int i;
+			for(i=0;i<100;i++)
+			{
+				c.increment();
+			}
+		});
+		obj.start();
+		obj1.start();
+		
+		obj.join();
+		obj1.join();
+		
+		System.out.println("Count "+c.count);
+	}
+}

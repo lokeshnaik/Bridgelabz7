@@ -1,0 +1,18 @@
+package com.bridgelabz.functionalprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class EuclideanDistance {
+
+	public static void main(String[] args)
+	{
+	  System.out.println("Enter thex x coordinate of a point");
+	  float x=UtilityScanner.floatInput();
+	  System.out.println("Enter thex x coordinate of a point");
+      float y=UtilityScanner.floatInput();
+     float distance=Utility.euclideanDistance(x,y);
+     System.out.println("The distance between origin and ("+x+","+y+")is = "+distance);
+	}
+
+}
