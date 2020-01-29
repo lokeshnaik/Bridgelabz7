@@ -15,7 +15,7 @@ import com.bridgelabz.algorithmprograms.SwapNibbles;
 import com.bridgelabz.algorithmprograms.SwitchProgram;
 import com.bridgelabz.functionalprograms.FlipCoin;
 import com.bridgelabz.functionalprograms.Gambler;
-import com.bridgelabz.functionalprograms.HarmonicNumber;
+
 
 
 public class Utility {
@@ -48,18 +48,18 @@ public class Utility {
 	}
 	
 	/**
-	 * @param number as paramter to calculate the Nth harmonic number
-	 * Passing number and harmonic number to display method of HarmonicNumber class to show the output
+	 * @param number as parameter to calculate the Nth harmonic number
+	 * @return the result value of float type
 	 * */
 	
-	public static void harmonicNumber(int number)
+	public static float harmonicNumber(int number)
 	{
 		float harmonic=1f;
 		 for(int i=2;i<=number;i++)
 		  {
 			  harmonic+=(float)1/i;
 		  }
-		 HarmonicNumber.display(number,harmonic); //Passing number and harmonic as parameter to display method of HarmonicNUmber class
+		return harmonic; 
 	}
 	
 	/**

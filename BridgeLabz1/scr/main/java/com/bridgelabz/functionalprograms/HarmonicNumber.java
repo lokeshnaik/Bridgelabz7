@@ -18,11 +18,8 @@ public class HarmonicNumber
 		  
 		  System.out.println("Enter the number to find the Nth harmonic");
 		  int number=UtilityScanner.integerInput();  //Taking integer input from the user to find the Nth harmonic
-		  Utility.harmonicNumber(number);            //Passing number as parameter to harmonicNUmber method in Utility class 
+		 float harmonicnumbersum=Utility.harmonicNumber(number); 
+		 System.out.println("The "+number+"th"+ " harmonic number is="+harmonicnumbersum);                                           //Passing number as parameter to harmonicNUmber method in Utility class 
 	  }
-	public static void display(int number,float harmonic)
-	{
-		 System.out.println("The "+number+"th"+ " harmonic number is="+harmonic);
-	}
-
+	
 }
