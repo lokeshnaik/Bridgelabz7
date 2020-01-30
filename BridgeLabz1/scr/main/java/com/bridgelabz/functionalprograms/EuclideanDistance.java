@@ -16,7 +16,7 @@ public class EuclideanDistance {
 	{
 	  System.out.println("Enter thex x coordinate of a point");
 	  float x=UtilityScanner.floatInput();                     //Taking x coordinate value of float type from the user input
-	  System.out.println("Enter thex x coordinate of a point");
+	  System.out.println("Enter thex y coordinate of a point");
       float y=UtilityScanner.floatInput();                     //Taking y coordinate value of float type from the user input
      float distance=Utility.euclideanDistance(x,y);            //Passing x and y coordinate points to the euclideanDistance method in Utility class
      System.out.println("The distance between origin and ("+x+","+y+")is = "+distance);
