@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="java.nio.file.Path"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.datastructureprograms.StringNode"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.datastructureprograms.NumberNode"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.utility.UtilityScanner"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.datastructureprograms.BothPrimeAnagram"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.datastructurestackqueue.StackNode"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.datastructurestackqueue.QueueNode"/>
+</qualifiedTypeNameHistroy>

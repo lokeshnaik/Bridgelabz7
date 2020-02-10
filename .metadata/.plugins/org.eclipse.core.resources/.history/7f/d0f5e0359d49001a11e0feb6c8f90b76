@@ -1,0 +1,15 @@
+package com.bridgelabz.datastructurestackqueue;
+
+public class StackAnagram {
+
+	public static void main(String[] args)
+    {
+		
+
+	}
+	public static void display(String anagramarray[],int x,String nonanagramarray[],int y)
+	{
+		
+	}
+
+}

@@ -2,6 +2,6 @@ package com.bridgelabz.datastructureprograms;
 
 public class Node 
 {
-  public char data;
+  public  int data;
   public Node next;
-}
+} 

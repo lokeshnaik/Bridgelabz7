@@ -1,0 +1,389 @@
+package com.bridgelabz.utility;
+
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+//import com.bridgelabz.datastructureprograms.PrimeNumbers;
+import com.bridgelabz.datastructureprograms.Node;
+import com.bridgelabz.datastructureprograms.NumberNode;
+import com.bridgelabz.datastructureprograms.StringNode;
+import com.bridgelabz.datastructureprograms.TwoDArray;
+
+public class Utility
+{
+	 static Node top=null;
+	 static StringNode head;
+	 static NumberNode root;
+
+	public void isEmptyStack()
+	{
+		Node node=new Node();
+		if(node==null)
+		{
+			System.out.println("Stack is empty:"); 
+		}
+		else
+		{
+			System.out.println("Stack is not empty:");
+		}
+	}
+	public static void push(char data)
+	{
+		 Node temporary;
+		 temporary =new Node();
+
+		 if(temporary==null)
+		 {
+		 System.out.println("Stack is full");
+		 }
+		 else
+		 {
+			 temporary.data=data;
+			temporary.next=top;
+		      top=temporary;
+		 }
+		
+	}
+	public static char pop()
+	{
+		  Node temporary;
+		 char x=(char) -1;
+
+		 if(top==null)
+		 System.out.println("Stack is Empty\n");
+		 else
+		 {
+		 temporary=top;
+		 top=top.next;
+		 x=(char) temporary.data;
+		 }
+		 return x;
+	}
+	public static int isBalanced(String string)
+	{
+		int i;
+	// Node top=null;
+		int length;
+		length=string.length();
+		char[] array=new char[length];
+		for( i=0;i<length;i++)
+		{
+			array[i]=string.charAt(i);
+		}
+
+	 for(i=0;i<length;i++)
+	 {
+	 if(array[i]=='(')
+	 push(array[i]);
+	 else if(array[i]==')')
+	 {
+	 if(top==null)
+	 return 0;
+	 pop();
+	 }
+	 }
+	 if(top==null)
+	 {
+	 return 1;
+	 }
+	 else
+	 {
+	 return 0;
+	 }
+	}
+	
+	 public static String sortString(String str) { 
+	        char []arr = str.toCharArray(); 
+	        Arrays.sort(arr); 
+	        return str;
+	       // System.out.print(String.valueOf(arr)); 
+	    }
+	
+	
+	public static void Anagram(int primearray[],int count)
+	{
+		ArrayList<String> list=new ArrayList<>();
+		ArrayList<String> values=new ArrayList<>();
+		String []sarray=new String[count];
+		for(int i=0;i<count;i++)
+		{
+			sarray[i]=String.valueOf(primearray[i]);
+		}
+		int flag;
+		String first=null;
+		String second;
+		for(int i=0;i<count-1;i++)
+		{
+			flag=0;
+			for(int j=i+1;j<count;j++)
+			{
+				 first=sortString(sarray[i]);
+				 second=sarray[j];
+				if(first.compareTo(second)==0)
+				{
+					list.add(first);
+					list.add(second);
+					flag++;
+				}
+				
+			}
+			if(flag==0)
+			{
+				values.add(first);
+			}
+		}
+		for(String i:list)
+		{
+			System.out.print(i+" ");
+		}
+		for(String j:values)
+		{
+			System.out.print(j+" ");
+		}
+	}
+	
+	
+	
+	
+	  public static void primeNumberAnagrams()
+	  {
+		  int count=0,flag;
+		  int i=1,j,number=1000;
+		  while(i<=number)
+		  {
+			  j=1;
+			  flag=0;
+			  while(j<=i)
+			  {
+				  if(i%j==0)
+				  {
+					  flag++;
+				  }
+				  j++;
+			  }
+			  if(flag==2)
+			  {
+				  count++;
+			  }
+			  i++;
+		  }
+		  int[] primearray=new int[count];
+		  int k=0;
+		  i=1;
+		  while(i<=number)
+		  {
+			  j=1;
+			  flag=0;
+			  while(j<=i)
+			  {
+				  if(i%j==0)
+				  {
+					  flag++;
+				  }
+				  j++;
+			  }
+			  if(flag==2)
+			  {
+				  primearray[k]=i;
+				  k++;
+			  }
+			  i++;
+		  }
+		       Anagram(primearray,k);     
+	  }
+	  
+	  public static void insert(String sdata)
+	  {
+	   StringNode node=new StringNode();
+	   node.sdata=sdata;
+	   node.next=null;
+	   if(head==null)
+	   {
+		   head=node;
+	   }
+	   else
+	   {
+		   StringNode n=head;
+		   while(n.next!=null)
+		   {
+			   n=n.next;
+		   }
+		   n.next=node;
+	   }
+		  
+	  }
+	  
+	  public static void show()
+	   {
+		   StringNode p=head;
+		   while(p!=null)
+		   {
+			   System.out.print(p.sdata+"->");
+			   p=p.next;
+		   }
+	   }
+	  
+	  public static void search(String word)
+	  {
+		  StringNode node=head;
+		  while(node!=null)
+		  {
+			  int flag=0;
+			  StringNode temp1=new StringNode();
+			  temp1.sdata=word;
+			  temp1.next=null;
+			  StringNode temp = head, prev = null; 
+			  
+		        // If head node itself holds the key to be deleted 
+		        if (temp != null && (temp.sdata).compareTo(word)==0) 
+		        { 
+		            head = temp.next; // Changed head 
+		            flag++;
+		            return; 
+		        } 
+		  
+		        // Search for the key to be deleted, keep track of the 
+		        // previous node as we need to change temp.next 
+		        while (temp != null && (temp.sdata).compareTo(word)!=0) 
+		        { 
+		            prev = temp; 
+		            temp = temp.next; 
+		        }     
+		  
+		        // If key was not present in linked list 
+		        if (temp == null&&flag==0) 
+		        	{
+		        	 prev.next=temp1;
+		        	      return; 
+		        	}
+		  
+		        // Unlink the node from linked list 
+		        prev.next = temp.next; 
+		  }
+	  }  
+		  public static void integerinsert(int intdata)
+		  {
+		   NumberNode node=new NumberNode();
+		   node.intdata=intdata;
+		   node.link=null;
+		   if(root==null)
+		   {
+			   root=node;
+		   }
+		   else
+		   {
+			   NumberNode n=root;
+			   while(n.link!=null)
+			   {
+				   n=n.link;
+			   }
+			   n.link=node;
+		   }
+			  
+		  }
+		  
+		  public static void integershow()
+		   {
+			   NumberNode p=root;
+			   while(p!=null)
+			   {
+				   System.out.print(p.intdata+"->");
+				   p=p.link;
+			   }
+		   }
+		  
+		  
+		  public static void integersearch(int number)
+		  {
+			  NumberNode node=root;
+			  NumberNode temp1=new  NumberNode();
+			  temp1.intdata=number;
+			  temp1.link=null;
+			  int flag=0;
+			  NumberNode temp = root, prev = null;
+			  if(node==null)
+			  {
+				  return ;
+			  }
+			  else
+			  {
+				  while(node!=null)
+				  {
+					  if(flag==0&&temp.intdata==number&&temp!=null)
+					  {
+						  head=head.next;
+						  flag++;
+					  }
+					  else
+					  {
+						  if(temp.intdata==number)
+						  {
+							prev.link=temp.link;
+							temp.link=null;
+							flag++;
+							break;
+						  }
+					  }
+					  prev=temp;
+					  temp=temp.link;
+					  node=node.link;
+				  }
+				  if(flag==0)
+				  {
+					  prev.link=temp1;
+				  }
+			  }
+		  }   
+		  
+		  public static void primeNumbers()
+		  {
+			  int count=0,flag;
+			  int i=1,j,number=1000;
+			  while(i<=number)
+			  {
+				  j=1;
+				  flag=0;
+				  while(j<=i)
+				  {
+					  if(i%j==0)
+					  {
+						  flag++;
+					  }
+					  j++;
+				  }
+				  if(flag==2)
+				  {
+					  count++;
+				  }
+				  i++;
+			  }
+			  int[] primearray=new int[count];
+			  int k=0;
+			  i=1;
+			  while(i<=number)
+			  {
+				  j=1;
+				  flag=0;
+				  while(j<=i)
+				  {
+					  if(i%j==0)
+					  {
+						  flag++;
+					  }
+					  j++;
+				  }
+				  if(flag==2)
+				  {
+					  primearray[k]=i;
+					  k++;
+				  }
+				  i++;
+			  }
+			  TwoDArray.display(primearray,count);           //Returning primearray  array and length of the array to display in PrimeNumbers class
+		  }
+		  
+	   
+	
+
+}

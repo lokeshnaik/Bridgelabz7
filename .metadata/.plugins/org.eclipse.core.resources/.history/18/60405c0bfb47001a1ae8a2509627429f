@@ -1,0 +1,8 @@
+package com.bridgelabz.sampleprograms;
+
+public class NodeStack 
+{
+	int data;
+	NodeStack next;
+
+}

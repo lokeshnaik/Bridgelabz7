@@ -1,0 +1,22 @@
+package com.bridgelabz.sampleprograms;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class SampleProgram {
+
+	public static void main(String[] args) throws IOException 
+	{
+		String str="";
+       BufferedReader br=new BufferedReader(new FileReader("/home/bridgelabz/Desktop/sample9.txt"));
+       str=br.readLine();
+        String [] array=str.split(" ");
+        for(int i=0;i<array.length;i++)
+        {
+       System.out.print(array[i]);
+        }
+       
+	}
+
+}

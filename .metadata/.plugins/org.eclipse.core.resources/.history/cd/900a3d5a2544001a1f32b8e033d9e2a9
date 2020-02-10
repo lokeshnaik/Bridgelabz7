@@ -1,0 +1,18 @@
+package programs;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Reader {
+
+	public static void main(String[] args) throws IOException
+	{
+		String str="srinu";
+	   BufferedWriter  br=new BufferedWriter(new FileWriter("/home/bridgelabz/Desktop/sample9.txt")); 
+          br.write(str);
+     
+     System.out.println(str);
+	}
+
+}

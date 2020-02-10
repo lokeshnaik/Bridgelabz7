@@ -1,0 +1,24 @@
+package com.bridgelabz.sampleprograms;
+
+import java.util.Scanner;
+
+public class Runner {
+
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		String string=scanner.next();
+		char []c=new char[string.length()];
+		int n,i;
+		for(i=0;i<string.length();i++)
+		{
+		c[i]=string.charAt(i);
+		}	
+		for(i=0;i<string.length();i++)
+		{
+			System.out.print(c[i]+" ");
+		}
+
+	}
+
+}

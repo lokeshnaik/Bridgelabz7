@@ -1,0 +1,268 @@
+package com.bridgelabz.utility;
+
+//import com.bridgelabz.datastructureprograms.PrimeNumbers;
+import com.bridgelabz.datastructureprograms.Node;
+import com.bridgelabz.datastructureprograms.NumberNode;
+import com.bridgelabz.datastructureprograms.StringNode;
+import com.bridgelabz.datastructureprograms.TwoDArray;
+
+public class Utility
+{
+	 static Node top=null;
+	 static StringNode head;
+	 static NumberNode root;
+	/*public static void ArthimeticExpression(String string)
+	{
+		Node top=null;
+		int length;
+		length=string.length();
+		char[] array=new char[length];
+		for(int i=0;i<length;i++)
+		{
+			array[i]=string.charAt(i);
+		}
+		for(int i=0;i<length;i++)
+		{
+			push(array[i],top);
+		}
+	}*/
+	
+	public void isEmptyStack()
+	{
+		Node node=new Node();
+		if(node==null)
+		{
+			System.out.println("Stack is empty:"); 
+		}
+		else
+		{
+			System.out.println("Stack is not empty:");
+		}
+	}
+	public static void push(char data)
+	{
+		 Node temporary;
+		 temporary =new Node();
+
+		 if(temporary==null)
+		 {
+		 System.out.println("Stack is full");
+		 }
+		 else
+		 {
+			 temporary.data=data;
+			temporary.next=top;
+		      top=temporary;
+		 }
+		
+	}
+	public static char pop()
+	{
+		  Node temporary;
+		 char x=(char) -1;
+
+		 if(top==null)
+		 System.out.println("Stack is Empty\n");
+		 else
+		 {
+		 temporary=top;
+		 top=top.next;
+		 x=(char) temporary.data;
+		 }
+		 return x;
+	}
+	public static int isBalanced(String string)
+	{
+		int i;
+	// Node top=null;
+		int length;
+		length=string.length();
+		char[] array=new char[length];
+		for( i=0;i<length;i++)
+		{
+			array[i]=string.charAt(i);
+		}
+
+	 for(i=0;i<length;i++)
+	 {
+	 if(array[i]=='(')
+	 push(array[i]);
+	 else if(array[i]==')')
+	 {
+	 if(top==null)
+	 return 0;
+	 pop();
+	 }
+	 }
+	 if(top==null)
+	 {
+	 return 1;
+	 }
+	 else
+	 {
+	 return 0;
+	 }
+	}
+	
+	
+	
+	
+	  public static void primeNumbers()
+	  {
+		  int count=0,flag;
+		  int i=1,j,number=1000;
+		  while(i<=number)
+		  {
+			  j=1;
+			  flag=0;
+			  while(j<=i)
+			  {
+				  if(i%j==0)
+				  {
+					  flag++;
+				  }
+				  j++;
+			  }
+			  if(flag==2)
+			  {
+				  count++;
+			  }
+			  i++;
+		  }
+		  int[] primearray=new int[count];
+		  int k=0;
+		  i=1;
+		  while(i<=number)
+		  {
+			  j=1;
+			  flag=0;
+			  while(j<=i)
+			  {
+				  if(i%j==0)
+				  {
+					  flag++;
+				  }
+				  j++;
+			  }
+			  if(flag==2)
+			  {
+				  primearray[k]=i;
+				  k++;
+			  }
+			  i++;
+		  }
+		  TwoDArray.display(primearray,count);           //Returning primearray  array and length of the array to display in PrimeNumbers class
+	  }
+	  
+	  public static void insert(String sdata)
+	  {
+	   StringNode node=new StringNode();
+	   node.sdata=sdata;
+	   node.next=null;
+	   if(head==null)
+	   {
+		   head=node;
+	   }
+	   else
+	   {
+		   StringNode n=head;
+		   while(n.next!=null)
+		   {
+			   n=n.next;
+		   }
+		   n.next=node;
+	   }
+		  
+	  }
+	  
+	  public static void show()
+	   {
+		   StringNode p=head;
+		   while(p!=null)
+		   {
+			   System.out.print(p.sdata+"->");
+			   p=p.next;
+		   }
+	   }
+	  
+	  public static void search(String word)
+	  {
+		  StringNode node=head;
+		  StringNode reference=head;
+		  int count=0;
+		  StringNode node1=null;
+		  while(node!=null)
+		  {
+			  node1=node;
+			  if((node.sdata).compareTo(word)==0&&count==0)
+			  if(node.sdata==word&&count==0)
+			  {
+				  reference=node1;
+				  node1=node.next;
+				  head=reference;
+			  }
+			 else if((node.sdata).compareTo(word)==0&&count!=0)
+			 // else if(node.sdata==word&&count!=0)
+			  {
+				  node1.next=node.next;
+			  }
+			  node=node.next;
+			  count++;
+		  }
+	  }  
+		  public static void integerinsert(int intdata)
+		  {
+		   NumberNode node=new NumberNode();
+		   node.intdata=intdata;
+		   node.link=null;
+		   if(root==null)
+		   {
+			   root=node;
+		   }
+		   else
+		   {
+			   NumberNode n=root;
+			   while(n.link!=null)
+			   {
+				   n=n.link;
+			   }
+			   n.link=node;
+		   }
+			  
+		  }
+		  
+		  public static  void sorting(int intarray,int count)
+		  {
+			  
+		  }
+		  
+		  public static void intSearch(int number)
+		  {
+			  NumberNode node=root;
+			  NumberNode  reference=root;
+			  int count=0;
+			  NumberNode  node1=null;
+			  while(node!=null)
+			  {
+				  node1=node;
+				  if(node.intdata==number&&count==0)
+				  if(node.intdata==number&&count==0)
+				  {
+					  reference=node1;
+					  node1=node.link;
+					  root=reference;
+				  }
+				 else if((node.intdata==number)&&count!=0)
+				 // else if(node.sdata==word&&count!=0)
+				  {
+					  node1.link=node.link;
+				  }
+				  node=node.link;
+				  count++;
+			  }
+			  
+		  }
+	   
+	
+
+}

@@ -1,0 +1,22 @@
+package com.bridgelabz.sampleprograms;
+
+import java.util.Scanner;
+
+public class Runner {
+
+	public static void main(String[] args) 
+	{
+		LinkedList list=new LinkedList();
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		/*for(int i=0;i<n;i++)
+		{
+			list.insert(sc.next());
+		}
+		list.show();*/
+		String str=sc.next();
+		System.out.println(str);
+
+	}
+
+}

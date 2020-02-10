@@ -1,0 +1,77 @@
+package com.bridgelabz.sampleprograms;
+
+import java.util.Scanner;
+
+class Stackprogram
+{
+	Node top=null;
+	public void push(int x)
+	{
+		Node node;
+		node=new Node();
+		if(node==null)
+		{
+			System.out.println("Stack is full:");
+		}
+		else
+		{
+			 node.data=x;
+			 top.next=top;
+			 top=node;
+		}
+		
+	}
+	
+	public void pop()
+	{
+		Node p;
+		int y=-1;
+		if(top==null)
+		{
+			System.out.println("Stack is underflow:");
+		}
+		else
+		{
+			p=top;
+			top=top.next;
+			y=p.data;
+		}
+	}
+	
+	public void display()
+	{
+	   Node head=top;
+	   while(head!=null)
+	   {
+		   System.out.print(head.data+"->");
+		   head=head.next;
+	   }
+	   
+	}
+}
+
+public class Stack {
+
+	public static void main(String[] args)
+	{
+		Stackprogram stack=new Stackprogram();
+	    int n;
+	    Scanner sc=new Scanner(System.in);
+	    n=sc.nextInt();
+	    int [] array=new int[n];
+	    for(int i=0;i<n;i++)
+	    {
+	    	array[i]=sc.nextInt();
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	       stack.push(array[i]);
+	    }
+	    stack.display();
+	    stack.pop();
+	    stack.display();
+		
+
+	}
+
+}

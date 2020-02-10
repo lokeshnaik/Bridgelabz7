@@ -1,0 +1,27 @@
+package com.bridgelabz.datastructureprograms;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class UnOrderedList {
+
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("Enter no of nodes you want to enter:");
+		int number=UtilityScanner.integerInput();
+		int i;
+		System.out.println("Enter value one by one:");
+		for(i=0;i<=number;++i)
+		{
+			System.out.println("Enter value one by one:");
+			String str=UtilityScanner.stringInput();
+			Utility.insert(str);
+            
+		}
+		Utility.show();
+		
+
+	}
+
+}

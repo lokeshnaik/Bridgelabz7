@@ -1,0 +1,8 @@
+import com.bridgelabz.datastructureprograms.Node;
+
+public class StringNode 
+{
+	  public String data;
+	  public Node next;
+
+}

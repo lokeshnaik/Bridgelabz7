@@ -1,0 +1,30 @@
+package com.bridgelabz.datastructureprograms;
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class UnOrderedList {
+
+	public static void main(String[] args) throws IOException
+	{
+		String string=" ";
+		BufferedReader  br=new BufferedReader(new FileReader("/home/bridgelabz/eclipse-workspace/BridgeLabz7/java9/src/main/java/com/bridgelabz/datastructureprograms/sample.txt")); 
+	     string=br.readLine();
+	     String []array=string.split(" ");
+	    for(int i=0;i<array.length;i++)
+	     {
+	    	  Utility.insert(array[i]);
+	     }
+	    System.out.println("Enter the string which you want to enter or wanted to find:");
+	    String word=UtilityScanner.stringInput();
+	    Utility.search(word);
+	   String read=Utility.show();
+	    
+	     br.close();
+
+	}
+
+}

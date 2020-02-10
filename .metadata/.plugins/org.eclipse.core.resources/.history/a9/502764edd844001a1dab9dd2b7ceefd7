@@ -1,0 +1,22 @@
+package com.bridgelabz.datastructureprograms;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.UtilityScanner;
+
+public class UnOrderedList {
+
+	public static void main(String[] args) throws IOException
+	{
+		
+		String str="";
+	       BufferedReader br=new BufferedReader(new FileReader("/home/bridgelabz/Desktop/sample7.txt"));
+	       str=br.readLine();
+	        System.out.println(str);
+		
+	}
+
+}

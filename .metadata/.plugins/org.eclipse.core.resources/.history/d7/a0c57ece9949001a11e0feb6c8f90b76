@@ -1,0 +1,7 @@
+package com.bridgelabz.datastructurestackqueue;
+
+public class StackNode
+{
+  public String data;
+  public StackNode next;
+}
