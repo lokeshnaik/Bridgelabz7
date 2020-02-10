@@ -25,6 +25,11 @@ public class Utility
 	 static Node top=null;
 	 static StringNode head;
 	 static NumberNode root;
+	 
+	 /**
+	  * @return void 
+	  * Displays whether the stack is empty or not
+	  * */
 
 	public void isEmptyStack()
 	{
@@ -38,6 +43,11 @@ public class Utility
 			System.out.println("Stack is not empty:");
 		}
 	}
+	/**
+	 * @param char data 
+	 * @return void 
+	 * Used for inserting the elements in the stack
+	 * */
 	public static void push(char data)
 	{
 		 Node temporary;
@@ -55,6 +65,10 @@ public class Utility
 		 }
 		
 	}
+	/** 
+	 * @return void 
+	 * Used for deleting  the elements in the stack
+	 * */
 	public static char pop()
 	{
 		  Node temporary;
@@ -70,6 +84,12 @@ public class Utility
 		 }
 		 return x;
 	}
+	/**
+	 * @param String string
+	 * @return int integer 0 or 1
+	 * Checking whether the paranthesis is balanced or not
+	 * */
+	
 	public static int isBalanced(String string)
 	{
 		int i;
@@ -102,6 +122,11 @@ public class Utility
 	 return 0;
 	 }
 	}
+	/**
+	 * @param String str
+	 * @return String
+	 * Sorting all the charater in the string
+	 * */
 	
 	 public static String sortString(String str) { 
 	        char []arr = str.toCharArray(); 
@@ -110,6 +135,11 @@ public class Utility
 	       // System.out.print(String.valueOf(arr)); 
 	    }
 	
+	 /**
+	  * @param primearray[] ,count 
+	  * @return void
+	  * Finding the numbers which are anagram in the prime numbers 1 to 1000
+	  * */
 	
 	public static void Anagram(int primearray[],int count)
 	{
@@ -156,9 +186,11 @@ public class Utility
 		}*/
 	}
 	
-	
-	
-	
+	/**
+	 * @return void 
+	 * Finding the prime numbers and anagrams in between 1 to 1000
+	 * 
+	 * */
 	  public static void primeNumberAnagrams()
 	  {
 		  int count=0,flag;
@@ -208,6 +240,12 @@ public class Utility
 		       Anagram(primearray,k);     
 	  }
 	  
+	  /**
+	   * @param String sdata
+	   * @return void
+	   * Inserting the  nodes containing string data in the linkedlist 
+	   * */
+	  
 	  public static void insert(String sdata)
 	  {
 	   StringNode node=new StringNode();
@@ -229,6 +267,11 @@ public class Utility
 		  
 	  }
 	  
+	  /**
+	   * @return String 
+	   * Displaying each and every node and returning the string.
+	   * */
+	  
 	  public static String show()
 	   {
 		   StringNode p=head;
@@ -241,6 +284,12 @@ public class Utility
 		   }
 		   return string;
 	   }
+	  /**
+	   * @param String word
+	   * Used for searching the word which is present in the file 
+	   * and adding at the end if not present else remove the word form the file.
+	   * @return void
+	   * */
 	  
 	  public static void search(String word)
 	  {
@@ -278,6 +327,12 @@ public class Utility
 				 previous.next=temp;
 			 }
 	  }  
+	  /**
+	   * @param integer intdata
+	   * @return void
+	   * Inserting the  nodes containing integer values data in the linkedlist 
+	   * */
+	  
 		  public static void integerinsert(int intdata)
 		  {
 		   NumberNode node=new NumberNode();
@@ -298,7 +353,11 @@ public class Utility
 		   }
 			  
 		  }
-		  
+		  /**
+		   * @return String 
+		   * Displaying each and every node containing integer
+		   *  and returning the string.
+		   * */
 		  public static String integershow()
 		   {
 			   NumberNode p=root;
@@ -311,7 +370,12 @@ public class Utility
 			   }
 			   return string;
 		   }
-		  
+		  /**
+		   * @param integer number
+		   * Used for searching the number which is present in the file 
+		   * and adding at the end if not present else remove the number form the file.
+		   * @return void
+		   * */
 		  
 		  public static void integersearch(int number)
 		  {
@@ -352,7 +416,12 @@ public class Utility
 					 node=node.link;
 				 }*/
 			 }
-		  }   
+		  } 
+		  
+		  /**
+		   * @param void 
+		   * Printing the which are prime in between  1 to 1000.
+		   * */
 		  
 		  public static void primeNumbers()
 		  {
@@ -400,7 +469,12 @@ public class Utility
 			  }
 			  TwoDArray.display(primearray,count);           //Returning primearray  array and length of the array to display in PrimeNumbers class
 		  }
-		  
+		  /**
+		   * @param String sdata
+		   * @return void 
+		   * Inserting the node which is containing string data into the stack
+		   * which are anagram into the stack 
+		   * */
 		  
 		  public static void stringPushAnagram(String sdata)
 			{
@@ -419,6 +493,12 @@ public class Utility
 				 }
 				
 			}
+		  /**
+		   * @param String sdata
+		   * @return void 
+		   * Inserting the node which is containing string data into the stack
+		   * which are Nonanagram into the stack 
+		   * */
 		  public static void stringPushNonAnagram(String sdata)
 			{
 				 StackNode temporary;
@@ -436,7 +516,10 @@ public class Utility
 				 }
 				
 			}
-		  
+		  /**
+		   * @param void 
+		   * Displaying each and every element which are Anagram in side the stack
+		   * */
 		  public static void stackAnagramDisplay()
 		  {
 			  StackNode node=top1;
@@ -446,7 +529,10 @@ public class Utility
 				  node=node.snext;
 			  }
 		  }
-		  
+		  /**
+		   * @param void 
+		   * Displaying each and every element which are NonAnagram in side the stack
+		   * */
 		  public static void stackNonAnagramDisplay()
 		  {
 			  StackNode node=top2;
@@ -456,6 +542,10 @@ public class Utility
 				  node=node.snext;
 			  }
 		  }
+		  /**
+		   * finding the numbers which are prime and displaying
+		   * 
+		   * */
 		  
 		  public static void primeNumberAnagramStack()
 		  {
@@ -465,7 +555,7 @@ public class Utility
 			  {
 				  j=1;
 				  flag=0;
-				  while(j<=i)
+ 				  while(j<=i)
 				  {
 					  if(i%j==0)
 					  {
@@ -503,8 +593,14 @@ public class Utility
 				  i++;
 			  }
 			  System.out.println();
-			       arrayAnagramstack(primearray,k);     
+			       arrayAnagramstack(primearray,k);           //Calling arrayAnagramstack method
 		  }
+		  /**
+		   * finding the numbers that are anagram and prime in between 1 to 1000
+		   * pushing into the array
+		   * And creating the linkedlist and displaying the numbers in the stack
+		   * which are anagarm and Nonanagram seperately by calling display function
+		   * */
 		  
 		  public static void arrayAnagramstack(int primearray[],int count)
 		  {
@@ -519,6 +615,7 @@ public class Utility
 					int flag;
 					String first=null;
 					String second;
+					//String str="a";
 					for(int i=0;i<count-1;i++)
 					{
 						flag=0;
@@ -526,14 +623,16 @@ public class Utility
 						{
 							 first=sortString(sarray[i]);
 							 second=sortString(sarray[j]);
-							if(first.compareTo(second)==0)
+							 if(first.equals(second)==true)    // (&& first.equals(str)==false)
 							{ 
+								//sarray[j]=null;
+								//sarray[j]=str;
 								x=x+2;
 								flag++;
 							}
 							
 						}
-						if(flag==0)
+						if(flag==0)       //(&&sarray[i].equals(str)==false)
 						{
 							y=y+1;
 						}
@@ -557,7 +656,7 @@ public class Utility
 							{
 								 first=sortString(sarray[i]);
 								 second=sortString(sarray[j]);
-								if(first.compareTo(second)==0)
+								 if(first.equals(second)==true)//(&&first.equals(str)==false)
 								{
 									anagramarray[a]=sarray[i];
 									stringPushAnagram(sarray[i]);
@@ -569,7 +668,7 @@ public class Utility
 								}
 								
 							}
-							if(flag==0)
+							if(flag==0)//(&&sarray[i].equals(str)==false)
 							{
 								
 								stringPushNonAnagram(sarray[i]);
@@ -579,13 +678,20 @@ public class Utility
 							}
 						}
 						 System.out.println("Numbers which are anagram:");
-						stackAnagramDisplay();
+						stackAnagramDisplay();                            //Calling stackAnagramDisplay method
 						System.out.println();
 						System.out.println("Numbers which are not anagram:");
-						stackNonAnagramDisplay();
+						stackNonAnagramDisplay();                          //Calling stackNonAnagramDisplay method
 						//StackAnagram.display(anagramarray,x,nonanagramarray,y);
 			
 				}
+		  
+		  /**
+		   * @param String x
+		   * @return void 
+		   * Inserting the node which is containing string data into the queue
+		   * which are anagram into the queue 
+		   * */
 		  public static void queueEnqueueAnagram(String x)
 			{
 			  QueueNode node=new QueueNode();
@@ -610,6 +716,13 @@ public class Utility
 				}
 				
 			}
+		  /**
+		   * @param String x
+		   * @return void 
+		   * Inserting the node which is containing string data into the queue
+		   * which are Nonanagram into the queue 
+		   * */
+		  
 		  public static void queueEnqueueNonAnagram(String x)
 			{
 			  QueueNode second=new QueueNode();
@@ -634,7 +747,11 @@ public class Utility
 				}
 				
 			}
-		  
+		  /**
+		   * @return String 
+		   * Removing the element from the queue
+		   * 
+		   * */
 		  public static String dequeue()
 			
 			{
@@ -652,7 +769,10 @@ public class Utility
 				}
 				return y;
 			}
-		  
+		  /**
+		   * @param void 
+		   * Displaying each and every element which are Anagram in side the queue
+		   * */
 			public static void queueAnagramDisplay()
 			{
 				QueueNode p=front;
@@ -662,6 +782,11 @@ public class Utility
 					p=p.qnext;
 				}
 			}
+			
+			/**
+			   * @param void 
+			   * Displaying each and every element which are NonAnagram in side the queue
+			   * */
 			public static void queueNonAnagramDisplay()
 			{
 				QueueNode p=front1;
@@ -671,7 +796,11 @@ public class Utility
 					p=p.qnext;
 				}
 			}
-			
+			/**
+			 * @param void 
+			 * Finding the numbers which are prime in between 1 - 1000
+			 * 
+			 * */
 			 public static void primeNumberAnagramQueue()
 			  {
 				  int count=0,flag;
@@ -718,9 +847,15 @@ public class Utility
 					  i++;
 				  }
 				  System.out.println();
-				       arrayAnagramqueue(primearray,k);     
+				       arrayAnagramqueue(primearray,k);     //Calling arrayAnagaramqueue method 
 			  }
 			  
+			 /**
+				 * @param void 
+				 * Finding the numbers which are prime  and anagram and also
+				 *  prime and Non anagram in between 1 - 1000
+				 * 
+				 * */
 			  public static void arrayAnagramqueue(int primearray[],int count)
 			  {
 				         int x=0;
@@ -734,6 +869,7 @@ public class Utility
 						int flag;
 						String first=null;
 						String second;
+						String str="a";
 						for(int i=0;i<count-1;i++)
 						{
 							flag=0;
@@ -741,8 +877,9 @@ public class Utility
 							{
 								 first=sortString(sarray[i]);
 								 second=sortString(sarray[j]);
-								if(first.compareTo(second)==0)
+								if(first.equals(second)==true&&first.equals(str)==false)
 								{ 
+									sarray[j]="a";
 									x=x+2;
 									flag++;
 								}
@@ -772,7 +909,7 @@ public class Utility
 								{
 									 first=sortString(sarray[i]);
 									 second=sortString(sarray[j]);
-									if(first.compareTo(second)==0)
+									 if(first.equals(second)==true&&first.equals(str)==false)
 									{
 										anagramarray[a]=sarray[i];
 										queueEnqueueAnagram(sarray[i]);
@@ -794,13 +931,14 @@ public class Utility
 								}
 							}
 							 System.out.println("Numbers which are anagram:");
-							queueAnagramDisplay();
+							queueAnagramDisplay();                            //Calling the queueAnagramDisplay method
 							System.out.println();
 							System.out.println("Numbers which are not anagram:");
-							queueNonAnagramDisplay();
+							queueNonAnagramDisplay();                          //Calling the queueNonAnagramDisplay method
 							//StackAnagram.display(anagramarray,x,nonanagramarray,y);
 				
 					}
+			 
 	   
 	
 

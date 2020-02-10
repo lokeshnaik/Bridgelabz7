@@ -1,6 +1,10 @@
 package com.bridgelabz.datastructureprograms;
 
 import com.bridgelabz.utility.Utility;
+/**
+ * TwoDArray Anagram:Printing the primenumbers in 2D array format which are in between 1 to 1000 
+ * @author Lokesh naik
+ * */
 
 public class TwoDArray {
 

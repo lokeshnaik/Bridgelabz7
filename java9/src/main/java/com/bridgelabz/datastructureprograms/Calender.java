@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Calender { 
 
-   /***************************************************************************
+   /*
     *  Given the month, day, and year, return which day
     *  of the week it falls on according to the Gregorian calendar.
     *  For month, use 1 for January, 2 for February, and so forth.
     *  Returns 0 for Sunday, 1 for Monday, and so forth.
-    ***************************************************************************/
+    *  @author Lokesh naik
+    */
     public static int day(int month, int day, int year) {
         int y = year - (14 - month) / 12;
         int x = y + y/4 - y/100 + y/400;
@@ -30,10 +31,6 @@ public class Calender {
         Scanner sc=new Scanner(System.in);
         int month=sc.nextInt();
         int year=sc.nextInt();
-      //  int month = Integer.parseInt(args[0]);    // month (Jan = 1, Dec = 12)
-      //  int year = Integer.parseInt(args[1]);     // year
-
-        // months[i] = name of month i
         String[] months = {
             "",                               // leave empty so that months[1] = "January"
             "January", "February", "March",
@@ -65,6 +62,6 @@ public class Calender {
             System.out.printf("%2d ", i);
             if (((i + d) % 7 == 0) || (i == days[month])) System.out.println();
         }
-
+  sc.close();
     }
 }
