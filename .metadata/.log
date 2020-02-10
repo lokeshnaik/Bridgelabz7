@@ -2519,3 +2519,8 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.
 !MESSAGE Unexpected error while loading repository template extensions
 !SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-02-10 09:32:59.566
 !MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.core.resources 2 2 2020-02-10 12:19:26.071
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-02-10 12:19:26.071
+!MESSAGE The project description file (.project) for 'java7' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
