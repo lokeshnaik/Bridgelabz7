@@ -13,7 +13,7 @@ public class QueueAnagram {
 	public static void main(String[] args) 
 	{
 		  System.out.println("Number of Prime numbers in between 0 to 1000");
-		  Utility.primeNumberAnagramQueue(); // Calling the primeNumberAnagramQueque method of Utility class
+		  Utility.primeNumberAnagramQueue(); // Calling the primeNumberAnagramQuequemethod of Utility class
 	}
 
 }

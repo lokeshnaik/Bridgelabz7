@@ -298,7 +298,7 @@ public class Utility
 			 temp.sdata=word;
 			 temp.next=null;
 			 int flag=0;
-			StringNode temp1=head,previous=null;
+			 StringNode temp1=head,previous=null;
 			 if(node==null) 
 			 {
 				return ; 
@@ -869,7 +869,7 @@ public class Utility
 						int flag;
 						String first=null;
 						String second;
-						String str="a";
+						//String str="a";
 						for(int i=0;i<count-1;i++)
 						{
 							flag=0;
@@ -877,9 +877,9 @@ public class Utility
 							{
 								 first=sortString(sarray[i]);
 								 second=sortString(sarray[j]);
-								if(first.equals(second)==true&&first.equals(str)==false)
+								if(first.equals(second)==true)//(&&first.equals(str)==false)
 								{ 
-									sarray[j]="a";
+									//sarray[j]="a";
 									x=x+2;
 									flag++;
 								}
@@ -909,7 +909,7 @@ public class Utility
 								{
 									 first=sortString(sarray[i]);
 									 second=sortString(sarray[j]);
-									 if(first.equals(second)==true&&first.equals(str)==false)
+									 if(first.equals(second)==true)  //(&&first.equals(str)==false)
 									{
 										anagramarray[a]=sarray[i];
 										queueEnqueueAnagram(sarray[i]);
